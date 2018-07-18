@@ -1,8 +1,74 @@
-﻿
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <title>Source: linkplugins.js | BT JSSDK</title>
+    <script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <script src="https://cdn.bootcss.com/prettify/r298/prettify.min.js"></script>
+    <script src="https://cdn.bootcss.com/prettify/r298/lang-css.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/prettify-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/bingo-style.css">
+    
+        
+            <link rel="stylesheet" href="../styles/extrand.css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="toggle-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="header-logo">
+            <a href="http://dev.bingocc.com/btapi/v1.0.0/index.html">
+                <img src="images/logo.png" height="100%">
+            </a>
+        </div>
+        <div class="header-title">
+            <h1>
+                <b><a href="index.html" class="link">BT JSSDK</a></b>
+            </h1>
+            
+                <span class="version">v0.0.1</span>
+            
+        </div>
+    </div>
+    <nav id="lnb" class="sidebar-wrapper">
+        <div class="sidebar-container">
+            <div id="sidebar-search">
+                <input type="text" placeholder="Search">
+                <ul></ul>
+            </div>
+            <div class="sidebar-menu">
+                
+                <div class="lnb-api hidden"><h3>Namespaces</h3><ul><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.html">app</a><div class="api-detail" style="display:none;" id="app_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.html#.ajax">ajax</a></li><li><a href="app.html#.ajaxWSDL">ajaxWSDL</a></li><li><a href="app.html#.alert">alert</a></li><li><a href="app.html#.back">back</a></li><li><a href="app.html#.confirm">confirm</a></li><li><a href="app.html#.exit">exit</a></li><li><a href="app.html#.get">get</a></li><li><a href="app.html#.getAppDirectoryEntry">getAppDirectoryEntry</a></li><li><a href="app.html#.getCurrentUri">getCurrentUri</a></li><li><a href="app.html#.getGlobalVariable">getGlobalVariable</a></li><li><a href="app.html#.getInfo">getInfo</a></li><li><a href="app.html#.getLocation">getLocation</a></li><li><a href="app.html#.getPageParams">getPageParams</a></li><li><a href="app.html#.getSize">getSize</a></li><li><a href="app.html#.hint">hint</a></li><li><a href="app.html#.install">install</a></li><li><a href="app.html#.isExist">isExist</a></li><li><a href="app.html#.load">load</a></li><li><a href="app.html#.loadWithUrl">loadWithUrl</a></li><li><a href="app.html#.openContactSelector">openContactSelector</a></li><li><a href="app.html#.openFile">openFile</a></li><li><a href="app.html#.post">post</a></li><li><a href="app.html#.refresh">refresh</a></li><li><a href="app.html#.rotation">rotation</a></li><li><a href="app.html#.run">run</a></li><li><a href="app.html#.setGlobalVariable">setGlobalVariable</a></li><li><a href="app.html#.vibrate">vibrate</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.barcode.html">app.barcode</a><div class="api-detail" style="display:none;" id="app.barcode_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.barcode.html#.scan">scan</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.database.html">app.database</a><div class="api-detail" style="display:none;" id="app.database_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.database.html#.executeNonQuery">executeNonQuery</a></li><li><a href="app.database.html#.executeQuery">executeQuery</a></li><li><a href="app.database.html#.open">open</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.dateTimePicker.html">app.dateTimePicker</a><div class="api-detail" style="display:none;" id="app.dateTimePicker_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.dateTimePicker.html#.selectDate">selectDate</a></li><li><a href="app.dateTimePicker.html#.selectTime">selectTime</a></li><li><a href="app.dateTimePicker.html#.wheelSelectDate">wheelSelectDate</a></li><li><a href="app.dateTimePicker.html#.wheelSelectTime">wheelSelectTime</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.link.html">app.link</a><div class="api-detail" style="display:none;" id="app.link_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.link.html#.addServiceAcccount">addServiceAcccount</a></li><li><a href="app.link.html#.chooseFile">chooseFile</a></li><li><a href="app.link.html#.compressImage">compressImage</a></li><li><a href="app.link.html#.createGroup">createGroup</a></li><li><a href="app.link.html#.execSyncService">execSyncService</a></li><li><a href="app.link.html#.getChildListByOrgId">getChildListByOrgId</a></li><li><a href="app.link.html#.getDeptInfoByOrgId">getDeptInfoByOrgId</a></li><li><a href="app.link.html#.getFavoriteService">getFavoriteService</a></li><li><a href="app.link.html#.getLanguage">getLanguage</a></li><li><a href="app.link.html#.getLoginInfo">getLoginInfo</a></li><li><a href="app.link.html#.getThemeColor">getThemeColor</a></li><li><a href="app.link.html#.getToken">getToken</a></li><li><a href="app.link.html#.getUnreadMessageCount">getUnreadMessageCount</a></li><li><a href="app.link.html#.getUnreadMessageCountById">getUnreadMessageCountById</a></li><li><a href="app.link.html#.getUserIdWithLoginId">getUserIdWithLoginId</a></li><li><a href="app.link.html#.getUserInfo">getUserInfo</a></li><li><a href="app.link.html#.getUserInfoByCellphoneOrEmail">getUserInfoByCellphoneOrEmail</a></li><li><a href="app.link.html#.imagePicker">imagePicker</a></li><li><a href="app.link.html#.launchLinkService">launchLinkService</a></li><li><a href="app.link.html#.logout">logout</a></li><li><a href="app.link.html#.openAbout">openAbout</a></li><li><a href="app.link.html#.openAppCard">openAppCard</a></li><li><a href="app.link.html#.openAppDesktop">openAppDesktop</a></li><li><a href="app.link.html#.openAppMarket">openAppMarket</a></li><li><a href="app.link.html#.openBlogSquare">openBlogSquare</a></li><li><a href="app.link.html#.openBtBroswer">openBtBroswer</a></li><li><a href="app.link.html#.openCheckGestureLock">openCheckGestureLock</a></li><li><a href="app.link.html#.openCheckInDetail">openCheckInDetail</a></li><li><a href="app.link.html#.openCheckInList">openCheckInList</a></li><li><a href="app.link.html#.openContactPage">openContactPage</a></li><li><a href="app.link.html#.openDiscoveryService">openDiscoveryService</a></li><li><a href="app.link.html#.openDisk">openDisk</a></li><li><a href="app.link.html#.openGroupCheckInList">openGroupCheckInList</a></li><li><a href="app.link.html#.openGroupList">openGroupList</a></li><li><a href="app.link.html#.openGroupMicroblog">openGroupMicroblog</a></li><li><a href="app.link.html#.openGroupNoticeList">openGroupNoticeList</a></li><li><a href="app.link.html#.openLinkBroswer">openLinkBroswer</a></li><li><a href="app.link.html#.openMicroblogDetail">openMicroblogDetail</a></li><li><a href="app.link.html#.openMicroblogPage">openMicroblogPage</a></li><li><a href="app.link.html#.openMsgCenter">openMsgCenter</a></li><li><a href="app.link.html#.openMyMicroblog">openMyMicroblog</a></li><li><a href="app.link.html#.openOnlineServicer">openOnlineServicer</a></li><li><a href="app.link.html#.openOrgCard">openOrgCard</a></li><li><a href="app.link.html#.openOrgList">openOrgList</a></li><li><a href="app.link.html#.openPdfBroswer">openPdfBroswer</a></li><li><a href="app.link.html#.openPersonEdit">openPersonEdit</a></li><li><a href="app.link.html#.openProcessMywork">openProcessMywork</a></li><li><a href="app.link.html#.openServiceAccountCard">openServiceAccountCard</a></li><li><a href="app.link.html#.openServiceAccountList">openServiceAccountList</a></li><li><a href="app.link.html#.openServiceAccountMicroblog">openServiceAccountMicroblog</a></li><li><a href="app.link.html#.openSetting">openSetting</a></li><li><a href="app.link.html#.openSpeechAssistant">openSpeechAssistant</a></li><li><a href="app.link.html#.openStCleanCache">openStCleanCache</a></li><li><a href="app.link.html#.openStDevice">openStDevice</a></li><li><a href="app.link.html#.openStFont">openStFont</a></li><li><a href="app.link.html#.openStGestureLock">openStGestureLock</a></li><li><a href="app.link.html#.openStInvite">openStInvite</a></li><li><a href="app.link.html#.openStModifyPassword">openStModifyPassword</a></li><li><a href="app.link.html#.openStNotification">openStNotification</a></li><li><a href="app.link.html#.openStQrcode">openStQrcode</a></li><li><a href="app.link.html#.openStSync">openStSync</a></li><li><a href="app.link.html#.openTodo">openTodo</a></li><li><a href="app.link.html#.openTopicMicroblog">openTopicMicroblog</a></li><li><a href="app.link.html#.openUserMicroblog">openUserMicroblog</a></li><li><a href="app.link.html#.openVideoRecord">openVideoRecord</a></li><li><a href="app.link.html#.publishMicroblog">publishMicroblog</a></li><li><a href="app.link.html#.registerReceiver">registerReceiver</a></li><li><a href="app.link.html#.runApp">runApp</a></li><li><a href="app.link.html#.scanCode">scanCode</a></li><li><a href="app.link.html#.sendGroupNotice">sendGroupNotice</a></li><li><a href="app.link.html#.sendInviteMessage">sendInviteMessage</a></li><li><a href="app.link.html#.sendServiceAccountNotice">sendServiceAccountNotice</a></li><li><a href="app.link.html#.share">share</a></li><li><a href="app.link.html#.shareToBlog">shareToBlog</a></li><li><a href="app.link.html#.shareToMessage">shareToMessage</a></li><li><a href="app.link.html#.startChat">startChat</a></li><li><a href="app.link.html#.startCheckIn">startCheckIn</a></li><li><a href="app.link.html#.startContactMulitSelector">startContactMulitSelector</a></li><li><a href="app.link.html#.startContactSingleSelector">startContactSingleSelector</a></li><li><a href="app.link.html#.startEmail">startEmail</a></li><li><a href="app.link.html#.startGroupCard">startGroupCard</a></li><li><a href="app.link.html#.startGroupChat">startGroupChat</a></li><li><a href="app.link.html#.startProcess">startProcess</a></li><li><a href="app.link.html#.startProjectDetail">startProjectDetail</a></li><li><a href="app.link.html#.startServiceAccountChat">startServiceAccountChat</a></li><li><a href="app.link.html#.startUserCard">startUserCard</a></li><li><a href="app.link.html#.startUserChat">startUserChat</a></li><li><a href="app.link.html#.updateTabBadge">updateTabBadge</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.notification.html">app.notification</a><div class="api-detail" style="display:none;" id="app.notification_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.notification.html#.notify">notify</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.page.html">app.page</a><div class="api-detail" style="display:none;" id="app.page_sub"><div class="member-type">Events</div><ul class="inner"><li><a href="app.page.html#.event:onError">onError</a></li><li><a href="app.page.html#.event:onLoad">onLoad</a></li><li><a href="app.page.html#.event:onReady">onReady</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.phone.html">app.phone</a><div class="api-detail" style="display:none;" id="app.phone_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.phone.html#.dial">dial</a></li><li><a href="app.phone.html#.getSimInfo">getSimInfo</a></li><li><a href="app.phone.html#.sendSMS">sendSMS</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.progress.html">app.progress</a><div class="api-detail" style="display:none;" id="app.progress_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.progress.html#.start">start</a></li><li><a href="app.progress.html#.stop">stop</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.setting.html">app.setting</a><div class="api-detail" style="display:none;" id="app.setting_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.setting.html#.clear">clear</a></li><li><a href="app.setting.html#.get">get</a></li><li><a href="app.setting.html#.getAll">getAll</a></li><li><a href="app.setting.html#.remove">remove</a></li><li><a href="app.setting.html#.set">set</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.timetask.html">app.timetask</a><div class="api-detail" style="display:none;" id="app.timetask_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.timetask.html#.start">start</a></li><li><a href="app.timetask.html#.stop">stop</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.utils.html">app.utils</a><div class="api-detail" style="display:none;" id="app.utils_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.utils.html#.isPC">isPC</a></li><li><a href="app.utils.html#.toJSON">toJSON</a></li></ul></div></li><li><button type="button" class="visible-hidden toggle-subNav btn btn-link">   <span class="glyphicon glyphicon-chevron-right"></span></button><a href="app.wheelSelect.html">app.wheelSelect</a><div class="api-detail" style="display:none;" id="app.wheelSelect_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="app.wheelSelect.html#.oneSelect">oneSelect</a></li></ul></div></li></ul></div>
+            </div>
+        </div>
+    </nav>
+    <main class="page-container">
+        <div class="container-fluid">
+            <div class="main">
+                
+        
+<section>
+    <article>
+        <pre class="prettyprint source linenums"><code>﻿
 ;(function (window) {
 
 	/**
-	 * Link平台功能接口，使用该模块必须先引入Cordova.js 和 bingotouch.js<br/>包含用户信息获取、通讯录、聊天、签到、应用、服务号等操作接口
+	 * Link平台功能接口，使用该模块必须先引入Cordova.js 和 bingotouch.js&lt;br/>包含用户信息获取、通讯录、聊天、签到、应用、服务号等操作接口
 	 * @namespace app.link
 	*/
     window.app.link = window.app.link || {};
@@ -512,7 +578,7 @@
     /**
         发送邀约消息（主要用在消息窗口，待补充）
         @method app.link.sendInviteMessage
-        @param params {Object} json对象，包含:<br/>toId:发送邀约消息对象id，要看toType是什么类型 <br/>toType:0系统1私聊2群组4部门5服务号 <br/>title:邀约标题 <br/>desc:邀约内容 <br/>action_params：操作指令，具体请咨询产品组
+        @param params {Object} json对象，包含:&lt;br/>toId:发送邀约消息对象id，要看toType是什么类型 &lt;br/>toType:0系统1私聊2群组4部门5服务号 &lt;br/>title:邀约标题 &lt;br/>desc:邀约内容 &lt;br/>action_params：操作指令，具体请咨询产品组
         @example
             var params={toId:'ebdfe3b1-ed9c-425b-aac3-aa6c61d05d0e',toType:1,title:'发送邀约',desc:'邀约描述',action_params:''};
             app.link.sendInviteMessage(params);
@@ -533,12 +599,12 @@
       * @method app.link.publishMicroblog
       * @param successCallback {Function} 成功回调
       * @param failCallback {Function} 失败回调,返回失败信息
-      * @param options {Object} JSON格式，动态参数，具体如下：<br/>
-      *     authorID {String} 发表动态的对象id ， 可以是用户或用户运营的服务号 （不写默认是当前用户）<br/>
-      *     content {String} 动态内容<br/>
-      *     privateType {Int}  私密类型 ， 0 群组，1 部门， 2 个人 ， 3 项目  ， 4公开 （默认类型）<br/>
-      *     privateInstanceID {String}  私密对象id<br/>
-      *     privateName {String} 私密对象名称<br/>
+      * @param options {Object} JSON格式，动态参数，具体如下：&lt;br/>
+      *     authorID {String} 发表动态的对象id ， 可以是用户或用户运营的服务号 （不写默认是当前用户）&lt;br/>
+      *     content {String} 动态内容&lt;br/>
+      *     privateType {Int}  私密类型 ， 0 群组，1 部门， 2 个人 ， 3 项目  ， 4公开 （默认类型）&lt;br/>
+      *     privateInstanceID {String}  私密对象id&lt;br/>
+      *     privateName {String} 私密对象名称&lt;br/>
       *     images {Array}  动态图片 （相册图片地址， 建议到动态发表界面再选择图片，这样更加方便）
       * @example
       * app.link.publishMicroblog(function(res){
@@ -560,21 +626,21 @@
     /**
         打开动态主页
         @method app.link.openMicroblogPage
-        @param displayType {Int} 显示类型<br/>
-        0 全部<br/>
-        1 官方<br/>
-        2 群组<br/>
-        3 个人<br/>
-        4 我的动态<br/>
-        5 相互关注<br/>
-        6 项目<br/>
+        @param displayType {Int} 显示类型&lt;br/>
+        0 全部&lt;br/>
+        1 官方&lt;br/>
+        2 群组&lt;br/>
+        3 个人&lt;br/>
+        4 我的动态&lt;br/>
+        5 相互关注&lt;br/>
+        6 项目&lt;br/>
         7 随便逛逛
         @example
             app.link.openMicroblogPage(0);
     */
     app.link.openMicroblogPage=function(displayType){
 
-        displayType = ( displayType >=0 && displayType <= 7 ) ? displayType : 0;
+        displayType = ( displayType >=0 &amp;&amp; displayType &lt;= 7 ) ? displayType : 0;
         var params={
             code:"OpenBuiltIn",
             key:"DcMicroBlog",
@@ -712,8 +778,8 @@
       * 启动应用市场App
       * @method app.link.runApp
       * @param params{Object} 启动应用的参数，key-value格式为
-      *     <br/> { appCode:"应用市场中填写的编码", appUrl:"启动页面相对地址", data:{name:"张三",sex:"male":age:25} }
-      *     <br/> 其中data参数也是json对象，启动目标应用后，能够在app.getPageParams里面获取到。
+      *     &lt;br/> { appCode:"应用市场中填写的编码", appUrl:"启动页面相对地址", data:{name:"张三",sex:"male":age:25} }
+      *     &lt;br/> 其中data参数也是json对象，启动目标应用后，能够在app.getPageParams里面获取到。
       * @example
       * var params={
       *     appCode:"com.bingo.touch",
@@ -1115,7 +1181,7 @@
 
 
     /**
-      * 注册系统消息监听<br/>注册完成后在页面声明 function nativeCallback(key, param) 就能够监听到消息了。param里面返回  accountType和 accountInstanceId
+      * 注册系统消息监听&lt;br/>注册完成后在页面声明 function nativeCallback(key, param) 就能够监听到消息了。param里面返回  accountType和 accountInstanceId
       * @method app.link.registerReceiver
       * @param key{String} link内部的key，例如 link_unreadMessageChanged 表示未读消息
     */
@@ -1127,10 +1193,10 @@
       * 外部内容分享到Link里面(待补充)
       * @method app.link.share
       * @param params{Object}
-      *     <br/>title: {string} 标题
-      *     <br/>content: {string} 分享内容摘要
-      *     <br/>icon: {string} 分享的图标地址，支持远程地址，或本地图片
-      *     <br/>type: {string} WEBSITE,PICTURE,ACTION
+      *     &lt;br/>title: {string} 标题
+      *     &lt;br/>content: {string} 分享内容摘要
+      *     &lt;br/>icon: {string} 分享的图标地址，支持远程地址，或本地图片
+      *     &lt;br/>type: {string} WEBSITE,PICTURE,ACTION
     */
     app.link.share=function(params,success,fail){
         pparams=params||{};
@@ -1145,10 +1211,10 @@
       * 分享到聊天界面(个人/群组)
       * @method app.link.shareToMessage
       * @param params{Object}
-      *     <br/>title: {string} 标题
-      *     <br/>content: {string} 分享内容摘要
-      *     <br/>icon: {string} 分享的图标地址，支持远程地址，或本地图片
-      *     <br/>type: {string} WEBSITE,PICTURE,ACTION
+      *     &lt;br/>title: {string} 标题
+      *     &lt;br/>content: {string} 分享内容摘要
+      *     &lt;br/>icon: {string} 分享的图标地址，支持远程地址，或本地图片
+      *     &lt;br/>type: {string} WEBSITE,PICTURE,ACTION
     */
     app.link.shareToMessage=function(params,success,fail){
         params=params||{};
@@ -1163,10 +1229,10 @@
       * 分享到动态
       * @method app.link.shareToBlog
       * @param params{Object}
-      *     <br/>title: {string} 标题
-      *     <br/>content: {string} 分享内容摘要
-      *     <br/>icon: {string} 分享的图标地址，支持远程地址，或本地图片
-      *     <br/>type: {string} WEBSITE,PICTURE,ACTION
+      *     &lt;br/>title: {string} 标题
+      *     &lt;br/>content: {string} 分享内容摘要
+      *     &lt;br/>icon: {string} 分享的图标地址，支持远程地址，或本地图片
+      *     &lt;br/>type: {string} WEBSITE,PICTURE,ACTION
     */
     app.link.shareToBlog=function(params,success,fail){
         params=params||{};
@@ -1399,3 +1465,49 @@
 
 
 
+</code></pre>
+    </article>
+</section>
+
+
+            </div>
+            <footer>Bingo JSDoc Template</footer>
+        </div>
+    </main>
+    <script>prettyPrint();</script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/bingo-script.js"></script>
+
+    <script>
+        var selectedApiId = '_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(selectedApiId); // do not use jQuery
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.css("display", "block");
+        $selectedApi.parent().find('button .glyphicon').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');
+        $selectedApi.prev().addClass('active');
+
+        var $apis = $('.lnb-api ul li .api-detail');
+        var apiDisplayState = window.sessionStorage.getItem('apiDisplayState');
+
+        if (apiDisplayState) {
+            apiDisplayState = JSON.parse(apiDisplayState);
+            for (var i = 0, len = apiDisplayState.length; i < len; i++) {
+                if (apiDisplayState[i] !== 'none') {
+                    $($apis[i]).css('display', apiDisplayState[i]);
+                    $($apis[i]).parent().find('button .glyphicon').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');
+                }
+            }
+        }
+        showLnbApi();
+
+        var offsetValue = window.sessionStorage.getItem('offsetValue');
+
+        if (offsetValue) {
+            $('.sidebar-container').scrollTop(Number(offsetValue));
+        }
+    </script>
+
+</body>
+</html>

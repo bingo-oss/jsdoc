@@ -21,7 +21,7 @@
     "opts": {
         "encoding": "utf8",
         "recurse": true,
-        "destination": "./out-bt/",  //输出文件地址
-        "readme": "./bt.md"  //js的首页说明文档
+        "destination": "./out/bt/",  //输出文件地址
+        "readme": "./index-md/bt.md"  //js的首页说明文档
     }
 }
