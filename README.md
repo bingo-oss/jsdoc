@@ -14,7 +14,7 @@
     ```
     `source` 需要生成文档的JS入口文件，使用相对路径。bt、weex都需要把相应用的工程拉到本地
 
-### 添加git子模块 bingo-jsdoc-template： 
-终端输入以下命令
-<pre>git submodule add <仓库地址> <本地路径></pre>
+* 子模块需装依赖
+  在终端进入`bingo-jsdoc-template`文件运行以下命令：
+  <pre>npm install</pre>
 
