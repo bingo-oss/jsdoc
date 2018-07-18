@@ -1,0 +1,3 @@
+[submodule "bingo-jsdoc-template"]
+	path = bingo-jsdoc-template
+	url = git@git.bingosoft.net:huangzt/bingo-jsdoc-template.git
