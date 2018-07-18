@@ -1,0 +1,27 @@
+{
+    "plugins": ["plugins/markdown"],
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": true
+    },
+    "templates": {
+        "name": "BT JSSDK",
+        "logo": {
+            "link": "http://dev.bingocc.com/btapi/v1.0.0/index.html"
+        },
+        "version": "0.0.1",
+        "css": [
+            "../styles/extrand.css"
+        ]
+    },
+    "source":{
+        "include": [ "../mobile-btjsapi/bingotouch.js","../mobile-btjsapi/linkplugins.js" ],
+        "includePattern": ".+\\.js(doc)?$"
+    },
+    "opts": {
+        "encoding": "utf8",
+        "recurse": true,
+        "destination": "./out-bt/",
+        "readme": "./bt.md"
+    }
+}
