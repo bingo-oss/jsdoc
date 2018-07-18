@@ -15,13 +15,13 @@
         ]
     },
     "source":{
-        "include": [ "../mobile-btjsapi/bingotouch.js","../mobile-btjsapi/linkplugins.js" ],
+        "include": [ "../mobile-btjsapi/bingotouch.js","../mobile-btjsapi/linkplugins.js" ],  //需要生成文档的js入口文件
         "includePattern": ".+\\.js(doc)?$"
     },
     "opts": {
         "encoding": "utf8",
         "recurse": true,
-        "destination": "./out-bt/",
-        "readme": "./bt.md"
+        "destination": "./out-bt/",  //输出文件地址
+        "readme": "./bt.md"  //js的首页说明文档
     }
 }
