@@ -16,7 +16,7 @@
     },
     "source":{
         "include": [ "../mobile-linkjsapi/linkapi.js" ],  //需要生成文档的js入口文件
-        "includePattern": ".+\\.js(doc)?$",
+        "includePattern": ".+\\.js(doc)?$"
     },
     "opts": {
         "encoding": "utf8",
