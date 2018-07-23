@@ -2,6 +2,10 @@
 基于jsdoc3生成对应的js文档
 
 ### 用法：
+* 首先确保是否安装jsdoc，如果没有可以用以下的方法安装，在终端输入：
+
+  <pre>npm install -g jsdoc  //全局安装<br/>npm install --save-dev jsdoc  //局部安装</pre>
+  在终端输入jsdoc -v ，如果有版本号出来说明安装成功。
 * 终端运行以下命令生成对应的方档out-bt,out-weex
 	<pre>./jsdoc.sh</pre>
 
