@@ -2,13 +2,21 @@
 
 ### 用法:
 
-  * <a href="https://github.com/bingo-oss/mobile-linkjsapi/blob/master/linkapi.js" target="_blank">linkapi.js</a> - Link平台提供的功能接口，使用该模块需要安装linkapi模块
-<pre>
+  * <a href="https://github.com/bingo-oss/mobile-linkjsapi/blob/master/linkapi.js" target="_blank">linkapi.js</a> - 提供与Link平台交互的功能接口。
+  
+  安装linkapi模块
+  
+  ```
   npm install linkapi --save
+  ```
+  
+  使用linkapi模块
+  
+  ```
   import linkapi from "linkapi"
-</pre>
-
-  ### <a href="https://github.com/bingo-oss/mobile-linkjsapi/tree/master/samples" target="_blank">示例]</a>
+  ```
+  
+<a href="https://github.com/bingo-oss/mobile-linkjsapi/tree/master/samples" target="_blank">示例</a>
 
 
 ### app提供以下的方法：
