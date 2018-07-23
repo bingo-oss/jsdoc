@@ -10,6 +10,7 @@
 	<pre>./jsdoc.sh</pre>
 
 * 配置文件 `jsdoc-conf-bt.json` `jsdoc-conf-weex.json` 
+
 	```js
 	"source":{
         "include": [ "../mobile-btjsapi/bingotouch.js","../mobile-btjsapi/linkplugins.js" ],  //需要生成文档的js入口文件
